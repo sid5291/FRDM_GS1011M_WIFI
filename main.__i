@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I.\include -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Freescale\Kinetis -o "main.o" --omf_browse "main.crf" --depend "main.d" "src\main.c"

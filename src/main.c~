@@ -1,0 +1,83 @@
+#include <MKL25Z4.H>
+#include "SlideWhistle.h"
+
+void Init_IO(void) {
+	// Init I/O for speaker on Port C
+	SIM->SCGC5 |= (1UL << 11); // enable clock for port C
+	PORTC->PCR[SPKR_POS] |= PORT_PCR_MUX(1);	// Select GPIO
+	PTC->PDDR |= SPKR_MSK; // set bit to output
+	PTC->PDOR &= ~SPKR_MSK; // set output to 0 initially
+
+	// Init I/O for switches on Port E 	
+	SIM->SCGC5 |=  (1UL <<  13); /* enable clock for port E */
+	PORTE->PCR[SW_UP_POS] |= PORT_PCR_MUX(1);	// Select GPIO
+	PORTE->PCR[SW_DN_POS] |= PORT_PCR_MUX(1);	
+	PORTE->PCR[SW_LT_POS] |= PORT_PCR_MUX(1);	
+	PORTE->PCR[SW_RT_POS] |= PORT_PCR_MUX(1);	
+	PORTE->PCR[SW_CR_POS] |= PORT_PCR_MUX(1);	
+	
+	// Set appropriate port C bits to inputs
+	PTE->PDDR &= ~( GPIO_PDDR_PDD(SW_UP_POS) | 
+								GPIO_PDDR_PDD(SW_DN_POS) |
+								GPIO_PDDR_PDD(SW_LT_POS) | 
+								GPIO_PDDR_PDD(SW_RT_POS) |
+								GPIO_PDDR_PDD(SW_CR_POS) );
+}
+
+void Delay_us(volatile unsigned int time_del) {
+	// This is a very imprecise and fragile implementation!
+	time_del = 9*time_del + time_del/2; 
+	while (time_del--) {
+		;
+	}
+}
+
+/*------------------------------------------------------------------------------
+	Code for driving speaker
+	period: microseconds
+	duration: milliseconds
+*------------------------------------------------------------------------------*/
+void Play_Tone(unsigned int period, unsigned int duration) {
+	unsigned num_cycles = duration*1000/period;
+	
+	while (num_cycles--) {
+		PTC->PTOR = SPKR_MSK;
+		Delay_us(period/2);
+		PTC->PTOR = SPKR_MSK;
+		Delay_us(period - period/2);
+	}
+}
+
+void Slide_Whistle( void ) {
+	unsigned raw_code;
+	static unsigned period = (MIN_PERIOD+MAX_PERIOD)/2;
+	
+	while (1) {
+		raw_code = ~(PTE->PDIR); 
+		if (raw_code & SW_DN_MSK) { // Reduce frequency, increase period
+			period++;
+		} 
+		if (raw_code & SW_UP_MSK) { // Increase frequency, reduce period
+			period--;
+		} 
+		if (period > MAX_PERIOD)
+			period = MAX_PERIOD;
+		if (period < MIN_PERIOD)
+			period = MIN_PERIOD;
+		
+		if (raw_code & SW_CR_MSK) { // Play Tone
+			Play_Tone(period, 10);
+		} else {
+			Delay_us(1000);
+		}
+	}
+}
+/*----------------------------------------------------------------------------
+  MAIN function
+ *----------------------------------------------------------------------------*/
+int main (void) {
+ 
+	Init_IO();
+	Slide_Whistle();
+}
+

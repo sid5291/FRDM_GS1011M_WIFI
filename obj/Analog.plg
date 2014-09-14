@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Alex\Documents\Teaching\Book Writin'\ARM Cortex M0Plus\Content\Analog IO\Code\Analog - ADC\Analog.uvproj
+Project File Date:  05/29/2013
+
+<h2>Output:</h2>
+Build target 'KL25Z Flash'
+compiling system_MKL25Z4.c...
+compiling LEDs.c...
+compiling main.c...
+src\main.c(36): warning:  #550-D: variable "vb" was set but never used
+linking...
+Program Size: Code=1904 RO-data=224 RW-data=4 ZI-data=1028  
+".\obj\Analog.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\Alex\\Documents\\Teaching\\Book Writin'\\ARM Cortex M0Plus\\Content\\Analog IO\\Code\\Analog - ADC\\obj\\Analog.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'KL25Z Flash'
+compiling main.c...
+src\main.c(35): warning:  #550-D: variable "vb" was set but never used
+linking...
+Program Size: Code=1832 RO-data=224 RW-data=4 ZI-data=1028  
+".\obj\Analog.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\Alex\\Documents\\Teaching\\Book Writin'\\ARM Cortex M0Plus\\Content\\Analog IO\\Code\\Analog - ADC\\obj\\Analog.AXF" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

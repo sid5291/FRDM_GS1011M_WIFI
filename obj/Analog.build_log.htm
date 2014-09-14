@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\NCSU\Research Work\Keil Board\FRDM_WIFI\Analog.uvproj
+Project File Date:  08/25/2014
+
+<h2>Output:</h2>
+Rebuild target 'KL25Z Flash'
+compiling system_MKL25Z4.c...
+assembling startup_MKL25Z4.s...
+compiling main.c...
+compiling LEDs.c...
+compiling gpio_aj.c...
+compiling sim_aj.c...
+compiling spi_aj.c...
+src\spi_aj.c(64): warning:  #550-D: variable "sio_dummy" was set but never used
+        uint8_t sio_dummy;
+src\spi_aj.c: 1 warning, 0 errors
+compiling WIFIApi.c...
+src\WIFIApi.c(332): warning:  #177-D: variable "i" was declared but never referenced
+      int i = 0;
+src\WIFIApi.c(495): warning:  #177-D: variable "line" was declared but never referenced
+    uint8_t line = 1 ,column = 0,chk =0;
+src\WIFIApi.c(495): warning:  #177-D: variable "column" was declared but never referenced
+    uint8_t line = 1 ,column = 0,chk =0;
+src\WIFIApi.c(495): warning:  #177-D: variable "chk" was declared but never referenced
+    uint8_t line = 1 ,column = 0,chk =0;
+src\WIFIApi.c(686): warning:  #177-D: variable "i" was declared but never referenced
+        int i =0;  
+src\WIFIApi.c(912): warning:  #550-D: variable "ip_address" was set but never used
+    char ip_address[32];
+src\WIFIApi.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=8832 RO-data=224 RW-data=36 ZI-data=1060  
+".\obj\Analog.axf" - 0 Error(s), 7 Warning(s).

@@ -1,0 +1,76 @@
+Dependencies for Project 'Analog', Target 'KL25Z Flash': (DO NOT MODIFY !)
+F (.\src\system_MKL25Z4.c)(0x50067DD8)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\system_mkl25z4.o --omf_browse .\obj\system_mkl25z4.crf --depend .\obj\system_mkl25z4.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.h)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+F (.\asm\startup_MKL25Z4.s)(0x4FEE2A04)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"--list .\lst\startup_mkl25z4.lst --xref -o .\obj\startup_mkl25z4.o --depend .\obj\startup_mkl25z4.d)
+F (.\src\main.c)(0x5414DF91)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+I (.\inc\user_defs.h)(0x540E13F5)
+I (.\inc\LEDs.h)(0x51A60DB0)
+I (.\inc\gpio_aj.h)(0x53E1A4EA)
+I (.\inc\sim_aj.h)(0x53F5287A)
+I (src\spi_aj.h)(0x53FBA535)
+F (.\LEDs.c)(0x540E9ECC)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\leds.o --omf_browse .\obj\leds.crf --depend .\obj\leds.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+I (.\inc\user_defs.h)(0x540E13F5)
+I (.\inc\LEDs.h)(0x51A60DB0)
+F (.\src\gpio_aj.c)(0x541126E0)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\gpio_aj.o --omf_browse .\obj\gpio_aj.crf --depend .\obj\gpio_aj.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+I (.\inc\user_defs.h)(0x540E13F5)
+F (.\src\sim_aj.c)(0x53F5287A)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\sim_aj.o --omf_browse .\obj\sim_aj.crf --depend .\obj\sim_aj.d)
+I (.\inc\sim_aj.h)(0x53F5287A)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+F (.\src\spi_aj.c)(0x540F9B63)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\spi_aj.o --omf_browse .\obj\spi_aj.crf --depend .\obj\spi_aj.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+I (.\inc\user_defs.h)(0x540E13F5)
+I (.\inc\LEDs.h)(0x51A60DB0)
+I (.\inc\sim_aj.h)(0x53F5287A)
+I (src\spi_aj.h)(0x53FBA535)
+F (.\src\WIFIApi.c)(0x5414E2B6)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I.\inc-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\RV31\INC"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis"-DMKL25Z128xxx4-o .\obj\wifiapi.o --omf_browse .\obj\wifiapi.crf --depend .\obj\wifiapi.d)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdio.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdarg.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdbool.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x5346E004)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm0plus.h)(0x5369336C)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\ARMCC\include\stdint.h)(0x5346E304)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h)(0x530359A0)
+I (D:\NCSU\Research Work\Keil Board\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x5346E004)
+I (.\inc\user_defs.h)(0x540E13F5)
+I (.\inc\LEDs.h)(0x51A60DB0)
+I (.\inc\sim_aj.h)(0x53F5287A)
+I (src\spi_aj.h)(0x53FBA535)
+F (.\inc\LEDs.h)(0x51A60DB0)()
+F (.\inc\user_defs.h)(0x540E13F5)()
+F (.\inc\gpio_aj.h)(0x53E1A4EA)()
+F (.\inc\sim_aj.h)(0x53F5287A)()
+F (.\src\spi_aj.h)(0x53FBA535)()

@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I.\include -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\Freescale\Kinetis -o "system_mkl25z4.o" --omf_browse "system_mkl25z4.crf" --depend "system_mkl25z4.d" "src\system_MKL25Z4.c"
